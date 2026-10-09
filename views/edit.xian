@@ -1,0 +1,15 @@
+{{>head}}
+
+    <form action="/update/{{data.id}}" method="POST">
+        <label for="BrandName">BrandName</label>
+        <input type="text" name="BrandName" placeholder="BrandName" value="{{data.BrandName}}">
+        <label for="DeviceName">DeviceName</label>
+        <input type="text" name="DeviceName" placeholder="DeviceName" value="{{data.DeviceName}}">
+        <label for="Specs">Specs</label>
+        <input type="text" name="Specs" placeholder="Specs" value="{{data.Specs}}">
+        <label for="Price">Price</label>
+        <input type="text" name="Price" placeholder="Price" value="{{data.Price}}">
+        <label for="DateReleased">DateReleased</label>
+        <input type="text" name="DateReleased" placeholder="DateReleased" value="{{data.DateReleased}}">
+        <input type="submit" name="update">
+    </form>
